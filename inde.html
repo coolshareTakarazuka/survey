@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケート</title>
+    <script
+          src="https://kit.fontawesome.com/d0a601627a.js"
+          crossorigin="anonymous"
+          ></script>
+</head>
+<body style="text-align: center; font-family: sans-serif;">
+    <header>
+           
+<div id="loading">
+<div class="loading-content">
+  <img src="https://i.ibb.co/Wv8X3LVh/1.png">
+  <h2>loading・・・</h2>
+</div>
+</div>
+<script>
+window.addEventListener('load',function(){
+  const element = document.querySelector('#loading')
+  element.classList.add('loadEnd');
+});
+</script>
+<style>
+#loading{
+  transition: all 1s;
+  background-color: #ffffff;
+  position:fixed;
+  z-index: 999;
+  inset: 0;
+  display: grid;
+  place-items:center;            
+}
+
+#loading img{
+  width: 40%;
+  animation: slide 4s linear infinite;
+  position: relative;
+}
+
+.loading-content{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(200%);
+  }
+}
+
+#loading h2 {
+  animation:fadeIn 5s linear infinite;
+  position:relative;
+  
+}
+
+@keyframes fadeIn{
+  0% {opacity: 0}
+  50% {opacity : 1}
+  100% {opacity: 0}
+
+}
+
+
+.loadEnd{
+opacity: 0;
+visibility: hidden;
+}
+
+
+
+
+
+
+
+</style>
+
+<h1><img src="https://i.ibb.co/Wv8X3LVh/1.png" alt="IMG-5451" width="100px" height="100px">
+    クールシェアシェアたからづか2025<br>  スタンプラリー</h1>
+    <h2>アンケートにご協力お願いいたします</h2>
+    <form onsubmit="disableButton(this)"
+              id="userForm1"
+              action="https://script.google.com/macros/s/AKfycbxEWxHuLJfVmyruagAWR0HkL8hzEraYF5vC8SVDE0dR8cXi2_dI6ZGExiyeNheVKL_d/exec"
+              method="post"
+              >
+           <!-- ユーザーIDは動的に追加されます -->
+           
+        <h3>①イベント全体の満足度を教えてください</h3>
+        <label><input type="radio" name="q1" value="5" required>とても満足</label>
+        <label><input type="radio" name="q1" value="4">満足</label>
+        <label><input type="radio" name="q1" value="3">普通</label>
+        <label><input type="radio" name="q1" value="2">不満</label>
+        <label><input type="radio" name="q1" value="1">とても不満</label>
+
+        <h4>そのように感じられた理由があれば教えてください</h4>
+        <textarea name="q2reason" rows="5" cols="60px"></textarea>
+
+        <h3>②スマートフォンを使ったQRコード読み取りは<br>スムーズにできましたか</h3>
+        <label><input type="radio" name="q2" value="はい" required>はい</label>
+        <label><input type="radio" name="q2" value="いいえ">いいえ</label>
+        <h4>そのように感じられた理由があれば教えてください</h4>
+        <textarea name="q2reason" rows="5" cols="60px"></textarea>
+
+        <h3>③スタンプラリーの内容やスポットの数について<br>どう感じましたか？</h3>
+        <label><input type="radio" name="q3" value="ちょうどよかった" required>ちょうどよかった</label>
+        <label><input type="radio" name="q3" value="多すぎた">多すぎた</label>
+        <label><input type="radio" name="q3" value="少なかった">少かった</label>
+
+        <h3>④お気に入りのスポットや印象に残った体験が<br>あれば教えてください</h3>
+        スポット名： <input type="text" name="q41"><br><br>
+        <textarea name="q42" rows="5" cols="60px"></textarea>
+
+        <h3>⑤今後のイベントで改善してほしい点やご意見・<br>ご感想があれば教えてください</h3>
+        <textarea name="q5" rows="5" cols="60px"></textarea><br>
+
+        <input type="hidden" name="idNo" value="${idNo}">
+
+        
+        <button class="button1" class="btn" type="submit">アンケート送信</button>
+
+    </form>
+    
+    <h4>ご協力ありがとうございました。</h4>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <nav>
+        <ul class="menu">
+          <li>
+            <a href="https://coolsharetakarazuka.github.io/home/" target="_self"
+              ><i class="fa-solid fa-house"></i><br /><span class="iconname"
+                >ホーム</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="https://coolsharetakarazuka.github.io/map/" target="_self"
+              ><i class="fa-solid fa-location-dot"></i><br /><span class="iconname"
+                >マップ</span
+              ></a
+            >
+          </li>
+          <li>
+            <a
+              href="
+            https://coolsharetakarazuka.github.io/how_to_play/" target="_self"
+              ><i class="fa-solid fa-list-ol"></i><br /><span class="iconname"
+                >遊び方</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="https://liff.line.me/2007302862-3mj9r7W5" target="_self"
+              ><i class="fa-solid fa-stamp"></i><br /><span class="iconname"
+                >スタンプラリー</span
+              ></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+    <script>
+
+        function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+        }
+
+        window.onload = function () {
+          const statusNo = getQueryParam("status");
+          if (statusNo) {
+            const input = document.createElement("input");
+            input.type = "hidden";
+            input.name = "statusNo";
+            input.value = statusNo;
+            document.getElementById("userForm").appendChild(input);
+          }
+        };
+    
+      function disableButton(form) {
+        const button = form.querySelector('button[type="submit"]');
+        button.disabled = true;
+        button.textContent = '送信中...';
+        return true; // フォームの送信を続ける
+      }
+
+    </script>
+
+    <style>
+                  .menu {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          background: white;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          padding: 10px 0;
+          box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+  
+        .menu li {
+          display: inline-block;
+          text-align: center;
+        }
+  
+        .menu a {
+          text-decoration: none;
+          color: black;
+        }
+  
+        .menu a i {
+          font-size: 24px;
+        }
+  
+        .menu a span {
+          display: block;
+          font-size: 12px; /* テキストサイズ */
+          margin-top: 5px;
+        }
+  
+        @media (max-width: 768px) {
+          .menu {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+          }
+  
+          .menu li {
+            padding: 5px;
+          }
+        }
+
+        h1{
+              font-family: sans-serif;
+              display: flex;
+              align-items: center; /* 縦方向の中央揃え */
+              justify-content: center; /* 横方向の中央揃え */
+              text-align: center;
+              background: skyblue;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              padding-left: 20px;
+                font-size:90%;
+              }
+
+        .btn{
+                  display: inline-block;
+                  padding: 0.5em 1em;
+                  text-decoration: none;
+                  background: #668ad8;
+                  color: #fff;
+                  border-bottom: solid 4px #627295;
+                  border-radius: 3px;
+                  font-size: 200%;
+                  font-family: sans-serif;
+                  font-weight: bold;
+                }
+
+                .btn:active {
+                /*ボタンを押したとき*/
+                -webkit-transform: translateY(4px);
+                transform: translateY(4px);/*下に動く*/
+                box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+                border-bottom: none;
+                }
+    </style>
+  </body>
+  </html>
+</body>
+</html>
