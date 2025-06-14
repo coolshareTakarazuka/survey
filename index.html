@@ -187,16 +187,16 @@ visibility: hidden;
         return urlParams.get(param);
         }
 
-        window.onload = function () {
-          const statusNo = getQueryParam("status");
-          if (statusNo) {
-            const input = document.createElement("input");
-            input.type = "hidden";
-            input.name = "statusNo";
-            input.value = statusNo;
-            document.getElementById("userForm1").appendChild(input);
-          }
-        };
+        document.addEventListener("DOMContentLoaded", function () {
+  const statusNo = getQueryParam("status");
+  if (statusNo) {
+    const input = document.createElement("input");
+    input.type = "hidden";
+    input.name = "statusNo";
+    input.value = statusNo;
+    document.getElementById("userForm1").appendChild(input);
+  }
+});
     
       function disableButton(form) {
         const button = form.querySelector('button[type="submit"]');
